@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = git@github.com:TAMULib/MagpieUI.git
+[submodule "service"]
+	path = service
+	url = git@github.com:TAMULib/MagpieService.git

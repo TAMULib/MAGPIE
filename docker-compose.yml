@@ -1,0 +1,36 @@
+version: '3.7'
+
+networks:
+  default:
+    name: weaver
+
+services:
+
+  service:
+    container_name: service
+    hostname: service
+    build:
+      dockerfile: Dockerfile
+      context: './service'
+    image: ${IMAGE_HOST}/${SERVICE_PROJECT}/magpie:${IMAGE_VERSION}
+    env_file:
+      - .env.service
+    ports:
+      - 9000:9000
+
+  client:
+    container_name: client
+    hostname: client
+    build:
+      dockerfile: Dockerfile
+      context: './client'
+      args:
+        - NPM_REGISTRY_URL=${NPM_REGISTRY_URL}
+        - NODE_ENV=${NODE_ENV}
+    image: ${IMAGE_HOST}/${CLIENT_PROJECT}/magpie:${IMAGE_VERSION}
+    env_file:
+      - .env.client
+    ports:
+      - 8080:80
+    depends_on:
+      - service
