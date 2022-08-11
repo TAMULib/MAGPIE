@@ -34,7 +34,7 @@ cp example.env .env
 cp example.env.client .env.client
 cp example.env.service .env.service
 
-# Make any desired changes to the .env, .env.client, and .env.service files before running docker-compose up.
+# Make any changes to the .env, .env.client, and .env.service files before here.
 docker-compose up
 ```
 
