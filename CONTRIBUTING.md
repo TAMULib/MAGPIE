@@ -2,7 +2,7 @@
 # Contributing to Metadata Assignment GUI Providing Ingest and Export App
 
 Though *Metadata Assignment GUI Providing Ingest and Export App* is developed and maintained by Texas A&M University Libraries, we welcome community contributions.
-Involvement in *Metadata Assignment GUI Providing Ingest and Export App* can take many forms:
+Involvement in *Metadata Assignment GUI Providing Ingest and Export App* can take many forms.
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 

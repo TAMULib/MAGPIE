@@ -6,7 +6,7 @@
 
 # Metadata Assignment GUI Providing Ingest and Export App
 
-The *Metadata Assignment GUI Providing Ingest and Export (MAGPIE) App*, consisting of a service back-end and a client front-end, developed and maintained by [Texas A&M University Libraries][tamu-library].
+The *Metadata Assignment GUI Providing Ingest and Export (MAGPIE) App*, consisting of a service back-end and a client front-end, is developed and maintained by [Texas A&M University Libraries][tamu-library].
 
 Using this repository requires loading a submodule, such as one of these methods:
 ```shell
@@ -23,11 +23,11 @@ git submodule init
 
 ## Deployment
 
-For a quick and easy deployment using `docker-compose` described in the [Deployment Guide][deployment-guide].
+A quick and easy deployment method using `docker-compose` is described in the [Deployment Guide][deployment-guide].
 
 For _advanced use cases_, or when `docker-compose` is unavailable, the use of `docker` or `npm`/`mvn` is also described in the [Deployment Guide][deployment-guide].
 
-Deployment, in general, will look something like this:
+Deployment, in general, may look something like this:
 
 ```shell
 cp example.env .env
@@ -51,7 +51,7 @@ Please feel free to file any issues concerning *MAGPIE App* to the issues sectio
 
 Any questions concerning *MAGPIE App* can be directed to helpdesk@library.tamu.edu.
 
-Copyright © 2022 Texas A&M University Libraries under the [The MIT License][license].
+Copyright © 2022 Texas A&M University Libraries under the [MIT License][license].
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 
