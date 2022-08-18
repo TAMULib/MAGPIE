@@ -27,8 +27,6 @@
 
 /.nb-gradle/
 
-build/
-
 
 ### VS Code ###
 .vscode/
@@ -44,6 +42,7 @@ tmp/
 
 
 ### Maven ###
+logs/
 target/
 
 .classpth
