@@ -38,6 +38,8 @@ cp example.env.service .env.service
 docker-compose up
 ```
 
+<sub>_* Note: It may be necessary to disable caching during build by passing `--no-cache` to the `docker-compose up` command._</sub>
+
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 
 
