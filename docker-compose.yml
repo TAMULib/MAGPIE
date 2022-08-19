@@ -7,27 +7,27 @@ networks:
 services:
 
   service:
-    container_name: service
-    hostname: service
+    container_name: magpie_service
+    hostname: magpie_service
     build:
       dockerfile: Dockerfile
       context: './service'
-    image: ${IMAGE_HOST}/${SERVICE_PROJECT}/magpie:${IMAGE_VERSION}
+    image: ${IMAGE_HOST}/${SERVICE_PROJECT}${SERVICE_PATH}:${SERVICE_IMAGE_VERSION}
     env_file:
       - .env.service
     ports:
       - 9000:9000
 
   client:
-    container_name: client
-    hostname: client
+    container_name: magpie_client
+    hostname: magpie_client
     build:
       dockerfile: Dockerfile
       context: './client'
       args:
-        - NPM_REGISTRY_URL=${NPM_REGISTRY_URL}
+        - NPM_REGISTRY=${NPM_REGISTRY}
         - NODE_ENV=${NODE_ENV}
-    image: ${IMAGE_HOST}/${CLIENT_PROJECT}/magpie:${IMAGE_VERSION}
+    image: ${IMAGE_HOST}/${CLIENT_PROJECT}${SERVICE_PATH}:${CLIENT_IMAGE_VERSION}
     env_file:
       - .env.client
     ports:
