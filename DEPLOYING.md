@@ -9,7 +9,7 @@ This is the recommended method of deployment for production systems.
 Perform the following steps to deploy:
 
 ```shell
-git clone https://github.com/TAMULib/Directory.git Magpie --recurse-submodules
+git clone https://github.com/TAMULib/MAGPIE.git Magpie --recurse-submodules
 
 cd Magpie/
 
@@ -40,7 +40,7 @@ The **development** process using `docker` or using `npm` may also be deployed f
 
 Performing the deployment using `docker` should be something similar to the following:
 ```shell
-git clone https://github.com/TAMULib/Directory.git Magpie --recurse-submodules
+git clone https://github.com/TAMULib/MAGPIE.git Magpie --recurse-submodules
 
 # For service:
 cd Magpie/service/
@@ -55,7 +55,7 @@ docker run -it client
 
 Performing the deployment using `npm`/`mvn` should be something similar to the following:
 ```shell
-git clone https://github.com/TAMULib/Directory.git Magpie --recurse-submodules
+git clone https://github.com/TAMULib/MAGPIE.git Magpie --recurse-submodules
 
 # For service:
 cd Magpie/service/
