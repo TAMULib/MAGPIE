@@ -53,7 +53,7 @@ Please feel free to file any issues concerning *MAGPIE App* to the issues sectio
 
 Any questions concerning *MAGPIE App* can be directed to helpdesk@library.tamu.edu.
 
-Copyright © 2022 Texas A&M University Libraries under the [MIT License][license].
+Copyright © 2022-2025 Texas A&M University Libraries under the [MIT license][LICENSE].
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 
